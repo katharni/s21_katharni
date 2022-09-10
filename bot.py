@@ -1,5 +1,3 @@
-pip install pytelegrambotapi
-pip install requests
 import requests
 import pandas as pd
 import telebot
