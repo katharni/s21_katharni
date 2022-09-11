@@ -1,5 +1,4 @@
 import requests
-import pandas as pd
 import telebot
 from datetime import date
 from telebot import types
