@@ -24,7 +24,10 @@ class API:
         url_str="/".join(url_3)
         resp = requests.get(url_str)
         return (resp.text)
- @bot.message_handler(commands=["start"])
+
+bot = telebot.TeleBot('5663397350:AAHZPEJnvj6Ik0j3Y16DMvJK8ByowIn8rbI')
+    
+@bot.message_handler(commands=["start"])
 def start(m, res=False):
         bot.send_message(m.chat.id, 'Привет. Введите данные:\nДля получения события по дате, введите дату в формате \n"дд.мм".\nДля получения события по году, введите год в формате \n"!гггг"\nДля получения интересного факта о числе, введите число в формате \n"?число"')
 @bot.message_handler(content_types=['text'])
